@@ -83,9 +83,10 @@ namespace ToodeDB_DM
                 command = new SqlCommand("UPDATE Toodetable SET +" +
                     "Toodenimetus=@toode, Kogus=@kogus, Hind=@hind(@toode,@kogus,@hind)", connect);
                 connect.Open();
+                command.Parameters.AddWithValue("@id", id);
                 command.Parameters.AddWithValue("@toode", Lisa.Text);
                 command.Parameters.AddWithValue("@kogus", Uuenda.Text);
-                command.Parameters.AddWithValue("@hind", Kustuta.Text);
+                command.Parameters.AddWithValue("@hind", Kustuta.Text.Replace(",","."));
                 command.ExecuteNonQuery();
                 connect.Close();
                 DisplayData();
