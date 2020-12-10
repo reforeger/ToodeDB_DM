@@ -50,7 +50,7 @@ namespace ToodeDB_DM
         }
         private void ClearData()
         {
-            id = 0;
+            //id = 0;
             Lisa.Text = "";
             Uuenda.Text = "";
             Kustuta.Text = "";
@@ -137,7 +137,7 @@ namespace ToodeDB_DM
             Lisa.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             pictureb1.Image = Image.FromFile(@"C:\Users\Kasutajad\opilane\source\repos\Mihol\MyFormsDM\MyFormsDM\" + dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
             string v = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            combobox1.SelectedIndex = Int32.Parse(v);
+            combobox1.SelectedIndex = Int32.Parse(v)-1;
         }
 
         private void btn_LisaPilt_Click(object sender, EventArgs e)
