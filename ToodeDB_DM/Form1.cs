@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace ToodeDB_DM
     {
         PictureBox pictureb1;
         ComboBox combobox1;
+        SaveFileDialog save;
         SqlConnection connect = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename =|DataDirectory|\AppData\Tooded.mdf; Integrated Security = True");
         SqlCommand command;
         SqlDataAdapter adapter;
@@ -136,6 +138,27 @@ namespace ToodeDB_DM
             pictureb1.Image = Image.FromFile(@"C:\Users\Kasutajad\opilane\source\repos\Mihol\MyFormsDM\MyFormsDM\" + dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
             string v = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             combobox1.SelectedIndex = Int32.Parse(v);
+        }
+
+        private void btn_LisaPilt_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
+            open.InitialDirectory = Path.GetFullPath(@"");
+            if (open.ShowDialog()==DialogResult.OK)
+            {
+                save = new SaveFileDialog();
+                save.FileName = Lisa.Text + "jpg";
+                save.Filter = "Image(*.jpeg;*.bmp;*.png;*.jpg|*.jpeg;*.bmp;*.png;*.jpg";
+                save.InitialDirectory = Path.GetFullPath(@"C:\Users\Kasutajad\opilane\source\repos\Mihol\MyFormsDM\MyFormsDM\");
+
+                if (save.ShowDialog()==DialogResult.OK)
+                {
+                    File.Copy(open.FileName, save.FileName);
+                    save.RestoreDirectory = true;
+                    pictureb1.Image = Image.FromFile(save.FileName);
+                }
+            }
         }
     }
 
