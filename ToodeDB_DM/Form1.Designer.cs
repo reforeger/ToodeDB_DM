@@ -39,9 +39,7 @@
             this.Uuenda = new System.Windows.Forms.Button();
             this.Kustuta = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.toodedDataSet = new ToodeDB_DM.ToodedDataSet();
             this.toodetableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.toodetableTableAdapter = new ToodeDB_DM.ToodedDataSetTableAdapters.ToodetableTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toodenimetusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kogusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,7 +106,7 @@
             this.Lisa.TabIndex = 6;
             this.Lisa.Text = "Lisa uus";
             this.Lisa.UseVisualStyleBackColor = true;
-            this.Lisa.Click += new System.EventHandler(this.Lisa_Click);
+
             // 
             // Uuenda
             // 
