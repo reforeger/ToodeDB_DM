@@ -188,7 +188,7 @@ namespace ToodeDB_DM
             }
             SmtpClient client = new SmtpClient("smtp.gmail.com");
             client.Port = 587;
-            client.Credentials = new System.Net.NetworkCredential("sanderdemih@gmail.com", "");
+            client.Credentials = new System.Net.NetworkCredential("daniel.mihol@gmail.com", "");
             client.EnableSsl = true;
             client.Send(mail);
             MessageBox.Show("Message sent!", "Successful", MessageBoxButtons.OK);

@@ -35,6 +35,8 @@
             this.SendMessageButton = new System.Windows.Forms.Button();
             this.Remove_Button = new System.Windows.Forms.Button();
             this.Form_Edit = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.AgeEditBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.GroupEditBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,6 +48,8 @@
             this.EmailEditBox = new System.Windows.Forms.TextBox();
             this.Edit_button = new System.Windows.Forms.Button();
             this.Form_Add = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.GroupBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.AgeBox = new System.Windows.Forms.TextBox();
             this.Submit_Button = new System.Windows.Forms.Button();
@@ -60,7 +64,6 @@
             this.groupListDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tARpv19BindingSource = new System.Windows.Forms.BindingSource(this.components);
-
             this.Form_Send = new System.Windows.Forms.Panel();
             this.BTN_send = new System.Windows.Forms.Button();
             this.BTN_file = new System.Windows.Forms.Button();
@@ -73,10 +76,6 @@
             this.TXT_subject = new System.Windows.Forms.TextBox();
             this.LBL_subject = new System.Windows.Forms.Label();
             this.Parents_Cbox = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.GroupBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.AgeEditBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.Form_Edit.SuspendLayout();
             this.Form_Add.SuspendLayout();
@@ -131,7 +130,7 @@
             this.Exit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_Button.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.Exit_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit_Button.Location = new System.Drawing.Point(0, 814);
+            this.Exit_Button.Location = new System.Drawing.Point(0, 818);
             this.Exit_Button.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.Exit_Button.Name = "Exit_Button";
             this.Exit_Button.Size = new System.Drawing.Size(148, 36);
@@ -149,7 +148,7 @@
             this.SendMessageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SendMessageButton.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.SendMessageButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SendMessageButton.Location = new System.Drawing.Point(0, 778);
+            this.SendMessageButton.Location = new System.Drawing.Point(0, 782);
             this.SendMessageButton.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.SendMessageButton.Name = "SendMessageButton";
             this.SendMessageButton.Size = new System.Drawing.Size(148, 36);
@@ -167,7 +166,7 @@
             this.Remove_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Remove_Button.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.Remove_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Remove_Button.Location = new System.Drawing.Point(0, 742);
+            this.Remove_Button.Location = new System.Drawing.Point(0, 746);
             this.Remove_Button.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.Remove_Button.Name = "Remove_Button";
             this.Remove_Button.Size = new System.Drawing.Size(148, 36);
@@ -192,10 +191,28 @@
             this.Form_Edit.Controls.Add(this.NumberEditBox);
             this.Form_Edit.Controls.Add(this.EmailEditBox);
             this.Form_Edit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Form_Edit.Location = new System.Drawing.Point(0, 449);
+            this.Form_Edit.Location = new System.Drawing.Point(0, 443);
             this.Form_Edit.Name = "Form_Edit";
-            this.Form_Edit.Size = new System.Drawing.Size(148, 293);
+            this.Form_Edit.Size = new System.Drawing.Size(148, 303);
             this.Form_Edit.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 10.18868F);
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(8, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 19);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Age";
+            // 
+            // AgeEditBox
+            // 
+            this.AgeEditBox.Location = new System.Drawing.Point(8, 174);
+            this.AgeEditBox.Name = "AgeEditBox";
+            this.AgeEditBox.Size = new System.Drawing.Size(137, 20);
+            this.AgeEditBox.TabIndex = 18;
             // 
             // label7
             // 
@@ -295,7 +312,7 @@
             this.Edit_button.Location = new System.Drawing.Point(0, 413);
             this.Edit_button.Margin = new System.Windows.Forms.Padding(13, 3, 3, 3);
             this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(148, 36);
+            this.Edit_button.Size = new System.Drawing.Size(148, 30);
             this.Edit_button.TabIndex = 4;
             this.Edit_button.Text = "Edit";
             this.Edit_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,6 +338,24 @@
             this.Form_Add.Name = "Form_Add";
             this.Form_Add.Size = new System.Drawing.Size(148, 293);
             this.Form_Add.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.18868F);
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(12, 196);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 19);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Group";
+            // 
+            // GroupBox
+            // 
+            this.GroupBox.Location = new System.Drawing.Point(12, 220);
+            this.GroupBox.Name = "GroupBox";
+            this.GroupBox.Size = new System.Drawing.Size(137, 20);
+            this.GroupBox.TabIndex = 12;
             // 
             // label8
             // 
@@ -418,13 +453,6 @@
             this.panel2.Size = new System.Drawing.Size(148, 84);
             this.panel2.TabIndex = 2;
             // 
-            // groupdbDataSetBindingSource
-            // 
-            this.groupdbDataSetBindingSource.Position = 0;
-            // 
-            // groupdbDataSet
-            // 
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
@@ -438,12 +466,6 @@
             // tARpv19BindingSource
             // 
             this.tARpv19BindingSource.DataMember = "TARpv19";
-            // 
-            // groupdbDataSet1
-            // 
-            // 
-            // tARpv19TableAdapter
-            // 
             // 
             // Form_Send
             // 
@@ -599,42 +621,6 @@
             this.Parents_Cbox.Text = "Parents";
             this.Parents_Cbox.UseVisualStyleBackColor = false;
             this.Parents_Cbox.CheckedChanged += new System.EventHandler(this.Parents_Cbox_CheckedChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.18868F);
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(12, 196);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 19);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Group";
-            // 
-            // GroupBox
-            // 
-            this.GroupBox.Location = new System.Drawing.Point(12, 220);
-            this.GroupBox.Name = "GroupBox";
-            this.GroupBox.Size = new System.Drawing.Size(137, 20);
-            this.GroupBox.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 10.18868F);
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(8, 150);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(33, 19);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Age";
-            // 
-            // AgeEditBox
-            // 
-            this.AgeEditBox.Location = new System.Drawing.Point(8, 174);
-            this.AgeEditBox.Name = "AgeEditBox";
-            this.AgeEditBox.Size = new System.Drawing.Size(137, 20);
-            this.AgeEditBox.TabIndex = 18;
             // 
             // Form1
             // 
